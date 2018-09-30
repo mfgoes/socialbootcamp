@@ -1,19 +1,10 @@
 /*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky Ahmed
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
 
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
 ---------------------------------------------------- */
 /*=====================================================================
-@Template Name: Builder Construction 
-@Author: Rocky Ahmed
-@Developed By: Rocky Ahmed
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
 
 @Default Styles
 
@@ -85,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-h2 {
+h2, h4 {
   color: #f05761;
 }
 
@@ -160,7 +151,7 @@ button:focus {
 }
 
 .header_area .navbar {
-  background: transparent;
+  background: #F5F5F5;
   padding: 0px;
   border: 0px;
   border-radius: 0px;
@@ -325,6 +316,7 @@ button:focus {
 
 .top_menu {
   border-bottom: 1px solid #eeeeee;
+  background-color: #242422;
 }
 
 .top_menu .header_social li {
@@ -333,10 +325,10 @@ button:focus {
 }
 
 .top_menu .header_social li a {
-  font-size: 12px;
+  font-size: 14px;
   color: #ccc;
   display: inline-block;
-  line-height: 45px;
+  line-height: 40px;
   -webkit-transition: all 300ms linear 0s;
   -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
@@ -435,19 +427,27 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  min-height: 700px;
+  height: 70vh;
+}
+
+.banner_inner {
+  height: 70vh;
+
 }
 
 .home_banner_area .banner_inner {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 80vh;
+  min-height: 500px;
 }
+
 
 .navbar-brand img {
   max-height: 40px;
 }
+
+
 
 @media (max-width: 767px) {
   .navbar-brand img {
@@ -463,7 +463,7 @@ button:focus {
 
 .home_banner_area .banner_inner .overlay {
   
-  background: url(../img/banner/basketball.jpg);
+  background: url(../img/banner/fitness17.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1965,7 +1965,7 @@ a.anchor {
 }
 
 .button-group-area:nth-child(odd) {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .button-group-area:first-child {
@@ -2144,6 +2144,68 @@ a.anchor {
 
 /*==============End Elements Button Area css ================*/
 /* =================================== */
+
+/*  Special frame with background */
+
+.frame-container {
+  background: url(../img/banner/portugal.jpg); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.frame-video {
+  background: url(../img/banner/portugal.jpg);
+  background: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  position: relative;
+  padding-bottom: 250px; /* 16:9 */
+  padding-top: 0%;
+  height: 0;
+  margin-bottom: 0px;
+}
+
+
+.frame-image {
+  background-color: white;
+  min-height: 200px;
+  padding: 0px;
+  vertical-align: middle;
+}
+.frame-inside-image img {
+  width: 100%;
+  min-height: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.frame-videotext {
+  background-color: white;
+  padding-left: 40px;
+  padding-top: 0px;
+  line-height: 30px;
+}
+
+
+.frame-text {
+  background-color: white;
+  min-height: 150px;
+  line-height: 30px;
+  padding: 60px;
+}
+
+
+
+.box-shadow {
+  -webkit-box-shadow: 0px 2px 5px -1px rgba(41,41,41,0.83);
+  -moz-box-shadow: 0px 2px 5px -1px rgba(41,41,41,0.83);
+  box-shadow: 0px 2px 5px -1px rgba(41,41,41,0.83);
+}
 /*  Elements Page Styles
 /* =================================== */
 /*---------- Start Elements Page -------------*/
@@ -2202,7 +2264,11 @@ a.anchor {
 
 .section-top-border {
   padding: 50px 0;
-  border-top: 1px dotted #eee;
+  background: url(../img/banner/fitness6.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .switch-wrap {
@@ -2252,7 +2318,10 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 40px; margin-bottom: 20px;
 }
 
 h3 {
@@ -2260,7 +2329,8 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: TTLakesMedium;
 }
 
 h5 {
@@ -2282,7 +2352,8 @@ h6 {
 
 .button-group-area .genric-btn {
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .button-group-area .genric-btn:last-child {
@@ -3543,6 +3614,10 @@ h6 {
 ============================================================================================ */
 .testimonials_area {
   background: #f9f9ff;
+  background: url(../img/banner/portugal.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -3602,6 +3677,7 @@ h6 {
 
 .testi_item .media {
   border: 1px solid #eeeeee;
+  background-color: #F7F7F7;
   border-radius: 10px;
   padding: 40px;
   -webkit-transition: all 300ms linear 0s;
@@ -3658,7 +3734,7 @@ h6 {
 
 
 .services_item {
-  text-align: center;
+  text-align: left;
   padding: 45px 55px;
   border-radius: 10px;
   -webkit-transition: all 300ms linear 0s;
@@ -3695,9 +3771,11 @@ h6 {
 
 .services_item h4 {
   font-size: 20px;
-  font-family: "Mukta", sans-serif;
-  color: #222222;
-  margin-bottom: 18px;
+  font-family: "TTLakesMedium", sans-serif;
+  color: #FF4846;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #434343;
 }
 
 .services_item p {
@@ -3900,12 +3978,15 @@ h6 {
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
   height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+
+
 }
 .video-wrapper iframe {
   position: absolute;
+  border: none;
+  box-shadow: none;
   top: 0;
   left: 0;
   width: 100%;

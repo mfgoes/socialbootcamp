@@ -36,7 +36,7 @@ Table of Content:
 
 @font-face {
   font-family: TTLakesMedium;
-  src: url("../fonts/TTLakes-Medium.otf") format('truetype');
+  src: url("../fonts/TypeType - TTLakes-Bold.otf") format('truetype');
 }
 
 /*---------------------------------------------------- */
@@ -117,7 +117,7 @@ button:focus {
 .main_title {
   text-align: center;
   max-width: 720px;
-  margin: 0px auto 75px;
+  margin: 0px auto 35px;
 }
 
 .main_title h2 {
@@ -151,7 +151,7 @@ button:focus {
 }
 
 .header_area .navbar {
-  background: #F5F5F5;
+  background: #FFFFFF;
   padding: 0px;
   border: 0px;
   border-radius: 0px;
@@ -162,7 +162,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 15px/100px "Mukta", sans-serif;
+  font: 500 15px/30px "Mukta", sans-serif;
   text-transform: uppercase;
   color: #222222;
   padding: 0px;
@@ -209,6 +209,16 @@ button:focus {
     border-radius: 0px;
   }
 }
+
+
+/*No margin left or right nomargin*/
+.nomargin {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 
 .header_area .navbar .nav .nav-item.submenu ul:before {
   content: "";
@@ -287,7 +297,7 @@ button:focus {
 }
 
 .header_area + section, .header_area + row, .header_area + div {
-  margin-top: 146px;
+  margin-top: 80px;
 }
 
 .header_area.navbar_fixed .main_menu {
@@ -427,12 +437,21 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  height: 70vh;
+  height: 90vh;
+}
+.banner_inner {
+  height: 90vh;
+
+}
+.quote_banner_area {
+  position: relative;
+  z-index: 1;
+  height: 25vh;
+  min-height:  500px;
 }
 
-.banner_inner {
-  height: 70vh;
-
+.quote_banner_area .banner_inner {
+  height: 25vh;
 }
 
 .home_banner_area .banner_inner {
@@ -444,7 +463,9 @@ button:focus {
 
 
 .navbar-brand img {
-  max-height: 40px;
+  max-height: 35px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 
@@ -463,7 +484,7 @@ button:focus {
 
 .home_banner_area .banner_inner .overlay {
   
-  background: url(../img/banner/fitness17.jpg);
+  background: url(../img/banner/runner-race-competition-female.jpg); /*IMG_1194*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -475,6 +496,13 @@ button:focus {
   height: 120%;
   bottom: 0;
   z-index: -1;
+}
+
+.quote_banner_area .banner_inner .overlay {
+  background: url(../img/banner/IMG_1255.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 a.anchor {
@@ -509,7 +537,8 @@ a.anchor {
 }
 
 .home_banner_area .banner_inner .banner_content h3 {
-  font-size: 60px;
+  font-size: 44px;
+  text-align: center;
   font-family: "TTLakesMedium", sans-serif;
   font-weight: normal;
   margin-bottom: 20px;
@@ -558,7 +587,7 @@ a.anchor {
 }
 
 .blog_banner .banner_inner .overlay {
-  background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+  background: url(../img/banner/IMG_1255.jpg) no-repeat scroll center center;
   opacity: .5;
   height: 125%;
   position: absolute;
@@ -1448,6 +1477,13 @@ a.anchor {
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px;
   }
+  .home_banner_area .banner_inner .overlay {
+  background: url(../img/banner/IMG_1255.jpg); /*IMG_1194*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
 }
 
 .comments-area {
@@ -2148,11 +2184,7 @@ a.anchor {
 /*  Special frame with background */
 
 .frame-container {
-  background: url(../img/banner/portugal.jpg); 
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .frame-video {
@@ -2166,37 +2198,95 @@ a.anchor {
   padding-bottom: 250px; /* 16:9 */
   padding-top: 0%;
   height: 0;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 
 .frame-image {
-  background-color: white;
   min-height: 200px;
   padding: 0px;
   vertical-align: middle;
+
 }
 .frame-inside-image img {
   width: 100%;
   min-height: 40px;
   padding: 0px;
   margin: 0px;
+
 }
 
 
 .frame-videotext {
-  background-color: white;
   padding-left: 40px;
   padding-top: 0px;
   line-height: 30px;
 }
 
+.frame-videotext h2 {
+  margin-top: 2px;
+}
 
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+  transition: color 0.5s;
+}
+label:hover {
+  color: #FF4846;
+  transition: color 0.5s;
+}
+label::before {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  content: "+ LEES MEER";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  margin-right: 3px;
+  /*background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);*/
+}
+#expand, #expand2 {
+  height: 0px;
+  overflow: hidden;
+}
+#expand p, #expand2 p {
+  margin-top: 0px;
+}
+
+#toggle:checked ~ #expand {
+  height: 100%; /*50px;*/
+}
+
+#toggle2:checked ~ #expand2 {
+  height: 100%; /*50px;*/
+}
+
+
+#toggle:checked ~ label::before {
+  content: "-";
+}
+#toggle2:checked ~ label::before {
+  content: "-";
+}
 .frame-text {
   background-color: white;
-  min-height: 150px;
+  min-height: 120px;
   line-height: 30px;
   padding: 60px;
+}
+
+.frame-image img {
+  width: 100%;
 }
 
 
@@ -2222,6 +2312,15 @@ a.anchor {
   .generic-banner .height {
     height: 400px;
   }
+
+.frame-videotext h2 {
+  margin-top: 20px;
+}
+
+.frame-videotext {
+  padding-left: 15px;
+}
+
 }
 
 .generic-banner .generic-banner-content h2 {
@@ -2263,11 +2362,11 @@ a.anchor {
 }
 
 .section-top-border {
-  padding: 50px 0;
-  background: url(../img/banner/fitness6.jpg);
+  padding: 0px;
+  /*background: url(../img/banner/fitness6.jpg);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   opacity: 1;
 }
 
@@ -2319,7 +2418,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   margin-top: 40px; margin-bottom: 20px;
 }
@@ -3729,7 +3828,7 @@ h6 {
 /* Services Area css
 ============================================================================================ */
 .services_inner {
-  margin-bottom: -30px;
+  margin-bottom: 0px;
 }
 
 
@@ -3816,7 +3915,6 @@ h6 {
 
 .builder_item:before {
   content: "";
-  background: #de5761e3;
   position: absolute;
   left: 0px;
   top: 0px;

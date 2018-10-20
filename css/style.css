@@ -1793,7 +1793,18 @@ a.anchor {
   color: #f05761;
   font-weight: 600;
 }
+ .fab i {
+  position: relative;
+  margin-top: 30px;
+}
 
+.contact_info .info_item p a {
+    color: #f05761;
+}
+
+.contact_info .info_item p a:hover {
+    color: #222222;
+}
 .contact_info .info_item h6 {
   font-size: 16px;
   line-height: 24px;
@@ -1808,8 +1819,8 @@ a.anchor {
 }
 
 .contact_info .info_item p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   padding: 2px 0px;
 }
 
@@ -3929,6 +3940,8 @@ h6 {
   transform: scale(0.95);
 }
 
+
+
 .builder_item .hover {
   position: absolute;
   top: 50%;
@@ -3978,6 +3991,25 @@ h6 {
   opacity: 1;
 }
 
+.reveal {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.reveal img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.reveal h2 {
+  color: white;
+  position: absolute;
+  left: 0px;
+  top: 30%;
+}
 /* End Builder Area css
 ============================================================================================ */
 /*---------------------------------------------------- */

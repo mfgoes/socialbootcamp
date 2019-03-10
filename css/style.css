@@ -68,16 +68,18 @@ body {
   font-size: 14px;
   font-family: "Mukta", sans-serif;
   font-weight: normal;
-  color: #777777;
+  color: #242422;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "TTLakesMedium", sans-serif;
   font-weight: 500;
+  font-style: 
 }
 
 h2, h4 {
   color: #f05761;
+  text-transform: uppercase;
 }
 
 button:focus {
@@ -537,11 +539,18 @@ a.anchor {
 }
 
 .home_banner_area .banner_inner .banner_content h3 {
-  font-size: 44px;
+  font-size: 34px;
   text-align: center;
   font-family: "TTLakesMedium", sans-serif;
   font-weight: normal;
   margin-bottom: 20px;
+}
+
+.home_banner_area .banner_inner .banner_content .title {
+  font-size: 44px;
+  text-align: center;
+  font-family: "TTLakesMedium", sans-serif;
+  margin-bottom: 0px;
 }
 
 .home_banner_area .banner_inner .banner_content h3 span {
@@ -589,7 +598,7 @@ a.anchor {
 .blog_banner .banner_inner .overlay {
   background: url(../img/banner/IMG_1255.jpg) no-repeat scroll center center;
   opacity: .5;
-  height: 125%;
+  height: 50%;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -2227,7 +2236,6 @@ a.anchor {
 
 }
 
-
 .frame-videotext {
   padding-left: 40px;
   padding-top: 0px;
@@ -2420,7 +2428,7 @@ label::before {
 }
 
 b, sup, sub, u, del {
-  color: #f8b600;
+  color: #EF5761;
 }
 
 h1 {
@@ -2431,7 +2439,7 @@ h2 {
   font-size: 24px;
   /*text-transform: uppercase;*/
   letter-spacing: 2px;
-  margin-top: 40px; margin-bottom: 20px;
+  margin-top: 40px; margin-bottom: 10px;
 }
 
 h3 {
@@ -2569,14 +2577,15 @@ h6 {
 }
 
 .genric-btn.primary-border {
-  color: #f8b600;
-  border: 1px solid #f8b600;
+  color: #242422;
+  border: 1px solid #242422;
   background: #fff;
+  margin-top: 8px; margin-bottom: 10px;
 }
 
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #f8b600;
+  background: #242422;
   border: 1px solid transparent;
 }
 
@@ -2710,9 +2719,10 @@ h6 {
 }
 
 .generic-blockquote {
-  padding: 30px 50px 30px 30px;
+  padding: 30px 30px 30px 30px;
   background: #fff;
-  border-left: 2px solid #f8b600;
+  border-left: 2px solid #EF5761;
+  font-style: italic;
 }
 
 @media (max-width: 991px) {
@@ -3838,6 +3848,38 @@ h6 {
 /*----------------------------------------------------*/
 /* Services Area css
 ============================================================================================ */
+
+
+
+
+/* Personal Banner code
+============================================================================================ */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shortbanner {
+  position: relative;
+  text-align: center;
+  min-height: 200px;
+  color: white;
+  background: url(../img/banner/IMG_1255.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.shortbanner img {
+   width: 100%;
+   opacity: 0.95;
+}
+
+/*============================================================================================ */
+
 .services_inner {
   margin-bottom: 0px;
 }
@@ -3997,6 +4039,7 @@ h6 {
   display: block;
   margin-bottom: 20px;
   background-color: black;
+  min-height: 100px;
 }
 
 .reveal img {
@@ -4004,11 +4047,16 @@ h6 {
   opacity: 0.8;
 }
 
+.reveal .banner1 {
+  background-color: red;
+}
+
 .reveal h2 {
   color: white;
   position: absolute;
+  padding: 20px;
   left: 0px;
-  top: 30%;
+  top: 25%;
 }
 /* End Builder Area css
 ============================================================================================ */

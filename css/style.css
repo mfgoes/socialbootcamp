@@ -52,6 +52,7 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #EF5761;
 }
 
 a:hover, a:focus {
@@ -79,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h2, h4 {
   color: #f05761;
-  text-transform: uppercase;
 }
 
 button:focus {
@@ -164,9 +164,9 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 15px/30px "Mukta", sans-serif;
+  font: 500 13px/26px "Mukta", sans-serif;
   text-transform: uppercase;
-  color: #222222;
+  color: #242422;
   padding: 0px;
   display: inline-block;
 }
@@ -219,6 +219,7 @@ button:focus {
   margin-left: 0px;
   padding-right: 0px;
   padding-left: 0px;
+  display: table;
 }
 
 
@@ -2226,8 +2227,8 @@ a.anchor {
   min-height: 200px;
   padding: 0px;
   vertical-align: middle;
-
 }
+
 .frame-inside-image img {
   width: 100%;
   min-height: 40px;
@@ -2235,6 +2236,23 @@ a.anchor {
   margin: 0px;
 
 }
+
+.image-circle {
+ vertical-align: middle;
+ position: relative;
+ min-height: 300px;
+}
+
+.image-circle img {
+ height: 40vh;
+ float: none;
+ margin: auto;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .frame-videotext {
   padding-left: 40px;
@@ -2299,7 +2317,7 @@ label::before {
 }
 .frame-text {
   background-color: white;
-  min-height: 120px;
+  min-height: 100px;
   line-height: 30px;
   padding: 60px;
 }
@@ -2442,8 +2460,16 @@ h2 {
   margin-top: 40px; margin-bottom: 10px;
 }
 
+@media (max-width: 991px) {
+  h2 {
+  margin-top: 10px; margin-bottom: 10px;
+}
+  }
+
+
 h3 {
   font-size: 24px;
+  letter-spacing: 0.1em;
 }
 
 h4 {
@@ -2457,6 +2483,11 @@ h5 {
 
 h6 {
   font-size: 14px;
+}
+
+.fab2 {
+	font-size: 1.2em;
+	margin-right: 5px;
 }
 
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
@@ -2485,13 +2516,14 @@ h6 {
 .genric-btn {
   display: inline-block;
   outline: none;
+  font-family: "Mukta", sans-serif;
   line-height: 40px;
   padding: 0 30px;
   font-size: 1em;
+  text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
@@ -2641,6 +2673,7 @@ h6 {
   color: #fff;
   background: #f4e700;
   border: 1px solid transparent;
+  font-style: lowercase;
 }
 
 .genric-btn.warning:hover {
@@ -2718,11 +2751,23 @@ h6 {
   cursor: not-allowed;
 }
 
+.grey-background {
+	background-color: #F7F7F7
+}
+#center-parent {
+	padding: 15px;
+}
+
 .generic-blockquote {
-  padding: 30px 30px 30px 30px;
-  background: #fff;
-  border-left: 2px solid #EF5761;
+  padding-left: 30px; padding-right: 30px;
+  background-color: transparent;
+  font-size: 1.3em;
+  line-height: 2em;
+  /*border-left: 2px solid #EF5761;*/
   font-style: italic;
+  display: table-cell;
+  vertical-align: middle;
+
 }
 
 @media (max-width: 991px) {
@@ -3865,7 +3910,7 @@ h6 {
 .shortbanner {
   position: relative;
   text-align: center;
-  min-height: 200px;
+  min-height: 33vh;
   color: white;
   background: url(../img/banner/IMG_1255.jpg);
   background-size: cover;

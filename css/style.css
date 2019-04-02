@@ -61,12 +61,16 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #EF5761;
+  line-height: 30px;
 }
 
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
+  color: grey;
 }
+
+
 
 .row.m0 {
   margin: 0px;
@@ -74,7 +78,7 @@ a:hover, a:focus {
 
 body {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Mukta", sans-serif;
   font-weight: normal;
   color: #242422;
@@ -1808,6 +1812,11 @@ a.anchor {
   padding-left: 45px;
 }
 
+.contact_info ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .contact_info .info_item i {
   position: absolute;
   left: 0;
@@ -1824,6 +1833,10 @@ a.anchor {
 
 .contact_info .info_item p a {
     color: #f05761;
+}
+
+.contact_info p {
+  letter-spacing: 1px;
 }
 
 .contact_info .info_item p a:hover {
@@ -2502,7 +2515,7 @@ h6 {
 
 .fab2 {
 	font-size: 1.2em;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
@@ -3925,17 +3938,22 @@ h6 {
 .shortbanner {
   position: relative;
   text-align: center;
-  min-height: 33vh;
+  height: 35vh;
+  min-height: 200px;
   color: white;
-  background: url(../img/banner/IMG_1255.jpg);
+  background: url(../img/banner/16d87fa9-294f-4716-8e40-48093b171885.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.shortbanner img {
-   width: 100%;
-   opacity: 0.95;
+
+.shortbanner h3 {
+  font-size: 30px;
+  width: 100%;
+  min-width: 100px;
 }
 
 /*============================================================================================ */
@@ -4099,16 +4117,23 @@ h6 {
   display: block;
   margin-bottom: 20px;
   background-color: black;
-  min-height: 100px;
+  min-height: 200px;
+  height: 100%;
 }
 
 .reveal img {
   width: 100%;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .reveal .banner1 {
   background-color: red;
+}
+
+.contact-img {
+  background-color: red;
+  background-image: url('../img/banner/runners.jpg');
+  background-size: cover;
 }
 
 .reveal h2 {
@@ -4461,7 +4486,6 @@ h6 {
 }
 
 .footer_title {
-  font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   font-family: "TTLakesMedium", sans-serif;
@@ -4481,7 +4505,7 @@ h6 {
 }
 
 .footer-bottom .footer-text a {
-  color: #f05761;
+  color: #B2B2B2;
 }
 
 .footer-bottom .footer-social {
@@ -4491,7 +4515,7 @@ h6 {
 .footer-social a {
   font-size: 16px;
   line-height: 30px;
-  color: #EF5761;
+  color: #B2B2B2;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;

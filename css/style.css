@@ -3828,14 +3828,33 @@ hr {
 ============================================================================================ */
 .testimonials_area {
   background: #f9f9ff;
-  background: url(../img/banner/portugal.jpg);
+  background: url(../img/gallery/onsteam_socialbootcamp.JPG);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  min-height: 70vh;
   vertical-align: middle;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 700px;
+  background-color: black;
 }
+@media screen and (max-width: 768px){
+  .testimonials_area {
+    background: #f9f9ff;
+    background: url(../img/gallery/onsteam_socialbootcamp.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    vertical-align: middle;
+    height: 40vh;
+    min-height: 200px;
+    background-color: black;
+    }
+}
+
+
 
 .testimonials_area .owl-prev, .testimonials_area .owl-next {
   position: absolute;

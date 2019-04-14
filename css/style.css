@@ -78,10 +78,13 @@ a:hover, a:focus {
 
 body {
   line-height: 24px;
-  font-size: 15px;
+  font-size: 1em;
   font-family: "Mukta", sans-serif;
   font-weight: normal;
   color: #242422;
+}
+p {
+   line-height: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -143,7 +146,7 @@ button:focus {
 .main_title h2 {
   font-family: "TTLakesMedium", sans-serif;
   font-size: 36px;
-  margin-bottom: 12px;
+  color: #fff;
 }
 
 .main_title p {
@@ -494,6 +497,7 @@ button:focus {
 @media (max-width: 767px) {
   .navbar-brand img {
   max-height: 33px;
+  margin-left: 20px;
   }
 }
 
@@ -2267,13 +2271,15 @@ a.anchor {
 .image-circle {
  vertical-align: middle;
  position: relative;
- min-height: 300px;
+ min-height: 200px;
+ height: 35vh;
 }
 
 .image-circle img {
- height: 40vh;
  float: none;
+ height: 100%;
  margin: auto;
+ padding: 10px;
  position: absolute;
   top: 50%;
   left: 50%;
@@ -2343,10 +2349,9 @@ label::before {
   content: "-";
 }
 .frame-text {
-  background-color: white;
   min-height: 100px;
   line-height: 30px;
-  padding: 60px;
+  padding: 30px;
 }
 
 .frame-image img {
@@ -2545,9 +2550,10 @@ h6 {
   display: inline-block;
   outline: none;
   font-family: "Mukta", sans-serif;
-  line-height: 40px;
+  line-height: 2.5em;
   padding: 0 30px;
-  font-size: 1em;
+  font-size: 0.9em;
+  min-width: 140px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -2784,19 +2790,31 @@ h6 {
 }
 #center-parent {
 	padding: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .generic-blockquote {
   padding-left: 30px; padding-right: 30px;
-  background-color: transparent;
-  font-size: 1.3em;
-  line-height: 2em;
   /*border-left: 2px solid #EF5761;*/
   font-style: italic;
   display: table-cell;
-  vertical-align: middle;
-
+  text-align: center;
 }
+
+hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-width: 0px;
+    width: 30%;
+    height: 3px;
+    background-color:#EF5761;
+}
+
 
 @media (max-width: 991px) {
   .progress-table-wrap {
@@ -3586,6 +3604,9 @@ h6 {
   .left-align-p p {
     margin-top: 20px;
   }
+  .left-align-p {
+    margin: 0 20px 0 20px;
+  }
 }
 
 .form-select {
@@ -3803,7 +3824,7 @@ h6 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-/* Testimonials Area css
+/* Testimonials / Team Area css
 ============================================================================================ */
 .testimonials_area {
   background: #f9f9ff;
@@ -3812,6 +3833,8 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
+  min-height: 70vh;
+  vertical-align: middle;
 }
 
 .testimonials_area .owl-prev, .testimonials_area .owl-next {
@@ -4134,6 +4157,37 @@ h6 {
   background-color: red;
   background-image: url('../img/banner/runners.jpg');
   background-size: cover;
+  background-position: center;
+}
+
+.home-img1 {
+  background-image: url('../img/gallery/IMG_1252.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  min-height: 30vw;
+}
+
+.home-img2 {
+  background-image: url('../img/gallery/IMG_1581.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  min-height: 30vw;
+}
+
+@media (max-width: 765px) {
+  .home-img2 {
+    display: none;
+  }
+  }
+
+.home-img3 {
+  background-image: url('../img/gallery/IMG_1285.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  min-height: 30vw;
 }
 
 .reveal h2 {

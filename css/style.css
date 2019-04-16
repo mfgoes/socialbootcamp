@@ -4195,8 +4195,8 @@ hr {
   min-height: 30vw;
 }
 
-@media (max-width: 765px) {
-  .home-img2 {
+@media (max-width: 768px) {
+  .home-img2, .contact-img, .contact_info .contact_text{
     display: none;
   }
   }
@@ -4233,7 +4233,7 @@ hr {
 
 .team_item .team_img:before {
   content: "";
-  background: rgba(250, 183, 0, 0.85);
+  background: #EF576199;
   position: absolute;
   left: 0px;
   top: 0px;

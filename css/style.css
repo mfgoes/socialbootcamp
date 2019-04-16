@@ -4442,9 +4442,13 @@ hr {
   background: #222222;
 }
 
-.single-footer-widget p {
+.single-footer-widget p, .single-footer-widget a {
   margin-bottom: 0px;
   color: #B2B2B2;
+}
+
+.single-footer-widget a:hover {
+  color: #fff;
 }
 
 .single-footer-widget .instafeed {

@@ -158,6 +158,12 @@ button:focus {
   margin-bottom: 0px;
 }
 
+.mini_quote {
+  font-size: 1.15em;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
 /* End Main Title Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -1408,6 +1414,7 @@ a.anchor {
   font-style: italic;
 }
 
+
 .single-post-area .arrow {
   position: absolute;
 }
@@ -2351,7 +2358,7 @@ label::before {
 .frame-text {
   min-height: 100px;
   line-height: 30px;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .frame-image img {
@@ -2535,7 +2542,7 @@ h6 {
 .button-group-area .genric-btn {
   margin-right: 10px;
   margin-top: 4px;
-  margin-bottom: 4px;
+  margin-bottom: 40px;
 }
 
 .button-group-area .genric-btn:last-child {
@@ -2564,6 +2571,10 @@ h6 {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+
+  margin-top: 15px; margin-bottom: 15px;
+
+
 }
 
 .genric-btn:focus {
@@ -2646,7 +2657,6 @@ h6 {
   color: #242422;
   border: 1px solid #242422;
   background: #fff;
-  margin-top: 8px; margin-bottom: 10px;
 }
 
 .genric-btn.primary-border:hover {
@@ -3980,14 +3990,14 @@ hr {
 .shortbanner {
   position: relative;
   text-align: center;
-  height: 35vh;
+  height: 80vh;
   min-height: 200px;
-  color: white;
-  background: url(../img/banner/16d87fa9-294f-4716-8e40-48093b171885.jpg);
+  color: #fff;
+  background: url(../img/banner/IMG_1260.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: white;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -4157,7 +4167,7 @@ hr {
   position: relative;
   overflow: hidden;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   background-color: black;
   min-height: 200px;
   height: 100%;
@@ -4183,7 +4193,7 @@ hr {
   background-image: url('../img/gallery/IMG_1252.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 400px;
   min-height: 30vw;
 }
 
@@ -4195,12 +4205,6 @@ hr {
   min-height: 30vw;
 }
 
-@media (max-width: 768px) {
-  .home-img2, .contact-img, .contact_info .contact_text{
-    display: none;
-  }
-  }
-
 .home-img3 {
   background-image: url('../img/gallery/IMG_1285.jpg');
   background-size: cover;
@@ -4208,6 +4212,48 @@ hr {
   height: 300px;
   min-height: 30vw;
 }
+.home-img4 {
+  background-image: url('../img/gallery/IMG_1430.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  min-height: 70vh;
+}
+
+.home-img5 {
+  background-image: url('../img/gallery/outside2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  min-height: 30vw;
+  margin-bottom: 0px;
+}
+
+.home-img6 {
+  background-image: url('../img/gallery/IMG_1590.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  min-height: 70vh;
+}
+
+
+
+
+@media (max-width: 991px) {
+  .home-img2, .contact-img, .contact_info .contact_text, .home-img5{
+    display: none;
+  }
+.home-img4 {
+  height: 200px;
+  min-height: 50vh;
+}
+
+
+
+  }
+
+
 
 .reveal h2 {
   color: white;

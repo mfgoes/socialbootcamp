@@ -2358,7 +2358,7 @@ label::before {
 .frame-text {
   min-height: 100px;
   line-height: 30px;
-  padding: 0 30px 30px 30px;
+  padding: 0 40px 20px 40px;
 }
 
 .frame-image img {
@@ -2501,7 +2501,7 @@ h2 {
 
 @media (max-width: 991px) {
   h2 {
-  margin-top: 10px; margin-bottom: 10px;
+  margin-top: 20px; margin-bottom: 10px;
 }
   }
 
@@ -2808,8 +2808,15 @@ h6 {
   padding-left: 30px; padding-right: 30px;
   /*border-left: 2px solid #EF5761;*/
   font-style: italic;
+  font-size: 1.3em;
   display: table-cell;
   text-align: center;
+}
+
+.font_8 p {
+  color: #ADADAD;
+  font-size: 0.9em;
+  margin: 0;
 }
 
 hr { 
@@ -3615,7 +3622,7 @@ hr {
     margin-top: 20px;
   }
   .left-align-p {
-    margin: 0 20px 0 20px;
+    margin: 0 40px 0 40px;
   }
 }
 

@@ -1,0 +1,114 @@
+
+/* Vimeo Player
+============================== */
+
+.vimeoheader {
+  width: 100%;
+  /* 100% height */
+  height: 100vh;
+  color: white;
+  background-color: black;
+  background: url(../img/banner/runner-race-competition-female.jpg); /*IMG_1194*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  text-align: center;
+  padding: 20px;
+  /* Fancy flex-box centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+
+
+
+.play {
+  background: #222;
+  margin: 0 auto;
+  /* Important for :after */
+  position: relative;
+}
+
+.play:after {
+  position: absolute;
+  content: "";
+  /* Centering */
+  top: 50%;
+  margin-top: -7px;
+  left: 30px;
+  margin-left:  -4px;
+  /* CSS Triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0px 6px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.play:hover {
+  border-color: transparent transparent transparent #EF5761;
+}
+
+.play p{
+  line-height: 2.5em;
+  margin: 0 0 0 10px;
+  -webkit-transition: margin 0.3s;
+}
+.play p:hover{
+  line-height: 2.5em;
+  margin: 0 0 0 14px;
+}
+
+/* Fullscreen Overlay */
+.video-overlay {
+  width: 100%;
+  height: 100vh;
+  /* 50% opacity black */
+  background: rgba(0,0,0,.5);
+  /* Stays locked on scroll */
+  position: fixed;
+  /* On top of the rest*/
+  z-index: 3;
+  /* Hidden */
+  opacity: 0;
+  /* No interference */
+  left: -100%;
+  /* CSS3 Transition */
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+
+/* 90% width container */
+.video-container {
+  width: 90%;
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.close {
+  width: 20px;
+  fill: white;
+  position: absolute;
+  right: 0;
+  /* Bring above video */
+  top: -30px;
+}
+
+.close:hover {
+  /* 50% opacity white */
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/* Class to fade in overlay */
+.show {
+  opacity: 1;
+}

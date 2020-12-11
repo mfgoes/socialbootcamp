@@ -1851,9 +1851,6 @@ a.anchor {
     color: #f05761;
 }
 
-.contact_info p {
-  letter-spacing: 1px;
-}
 
 .contact_info .info_item p a:hover {
     color: #222222;
@@ -2284,7 +2281,8 @@ a.anchor {
  vertical-align: middle;
  position: relative;
  min-height: 200px;
- height: 35vh;
+ height: 50%;
+ margin-top: 20px;
 }
 
 .image-circle img {
@@ -2500,7 +2498,7 @@ h1 {
 h2 {
   font-size: 24px;
   /*text-transform: uppercase;*/
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   margin-top: 40px; margin-bottom: 10px;
 }
 
@@ -4196,7 +4194,7 @@ hr {
 
 .contact-img {
   background-color: red;
-  background-image: url('../img/banner/runners.jpg');
+  background-image: url('../img/banner/building.jpg');
   background-size: cover;
   background-position: center;
 }

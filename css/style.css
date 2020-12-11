@@ -3990,7 +3990,7 @@ hr {
 
 
 /* Personal Banner code
-============================================================================================ */
+========================================================================================== */
 
 .centered {
   position: absolute;
@@ -4005,7 +4005,7 @@ hr {
   height: 80vh;
   min-height: 200px;
   color: #fff;
-  background: url(../img/banner/IMG_1260.jpg);
+  background: url(../img/banner/IMG_1260.JPG);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
